@@ -1,0 +1,110 @@
+CSS * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-size: 30px;
+  
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+#container {
+  background-color: lightgrey;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  box-shadow: inset 4px 4px 6px white, inset -4 -4 6px white;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-right: 70px;
+}
+
+.nametoggle {
+  margin-left: auto;
+  margin-top: 30px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  transform: scale(0.7);
+  background-color: yellow;
+  border-radius: 25px;
+  box-shadow: 3px 3px 8px white, -3px -3px 8px white;
+  background-image: url("../assets/img/sol.png") ;
+  background-size: contain;
+  background-position: center; 
+  transition: left 0.5s ease;
+
+}
+
+#container.active .toggle {
+  left: 40px;
+  background-color: rgb(96, 112, 204);
+  background-image: url("../assets/img/luna.png") ;
+  background-size: contain;
+  background-position: center; 
+}
+
+body.active {
+  background-color: black;
+  color: white;
+}
+
+body.active h1 {
+  color: yellow;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainTitle {
+  margin-bottom: 10px;
+}
+
+.mainText {
+  padding: 0 200px;
+  margin-bottom: 20px;
+}
